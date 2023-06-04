@@ -1,0 +1,28 @@
+
+        tblDoc.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent fe) {
+                tblDoc.setColumnSelectionAllowed(true);
+                tblDoc.setCellSelectionEnabled(true);
+            }
+
+            @Override
+            public void focusLost(FocusEvent fe) {
+                tblDoc.setColumnSelectionAllowed(false);
+                tblDoc.setCellSelectionEnabled(false);
+            }
+        });
+
+        tabla_compartidos.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent fe) {
+                tabla_compartidos.setColumnSelectionAllowed(true);
+                tabla_compartidos.setCellSelectionEnabled(true);
+            }
+
+            @Override
+            public void focusLost(FocusEvent fe) {
+                tabla_compartidos.setColumnSelectionAllowed(false);
+                tabla_compartidos.setCellSelectionEnabled(false);
+            }
+        });
